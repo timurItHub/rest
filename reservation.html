@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование | Вкусный Уголок</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo">Вкусный Уголок</h1>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__item"><a href="index.html" class="header__link">Главная</a></li>
+                    <li class="header__item"><a href="menu.html" class="header__link">Меню</a></li>
+                    <li class="header__item"><a href="reservation.html" class="header__link">Бронирование</a></li>
+                    <li class="header__item"><a href="reviews.html" class="header__link">Отзывы</a></li>
+                    <li class="header__item"><a href="contact.html" class="header__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Reservation Section -->
+    <section class="reservation">
+        <div class="reservation__container">
+            <h2 class="reservation__title">Бронирование столика</h2>
+            <form class="reservation__form" action="submit-reservation.php" method="post">
+                <label class="reservation__label">Ваше Имя:
+                    <input type="text" class="reservation__input" name="name" required>
+                </label>
+                <label class="reservation__label">Дата:
+                    <input type="date" class="reservation__input" name="date" required>
+                </label>
+                <label class="reservation__label">Время:
+                    <input type="time" class="reservation__input" name="time" required>
+                </label>
+                <label class="reservation__label">Количество человек:
+                    <input type="number" class="reservation__input" name="people" required min="1">
+                </label>
+                <button type="submit" class="reservation__button">Забронировать</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">&copy; 2024 Ресторан "Вкусный Уголок". Все права защищены.</p>
+            <ul class="footer__social">
+                <li><a href="#" class="footer__link">Facebook</a></li>
+                <li><a href="#" class="footer__link">Instagram</a></li>
+                <li><a href="#" class="footer__link">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

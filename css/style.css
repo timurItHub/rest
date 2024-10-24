@@ -1,0 +1,269 @@
+/* Импортируем шрифт */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header__logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #f5c518;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header__link {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.header__link:hover {
+    color: #f5c518;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/restaurant.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero__content {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero__title {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.hero__subtitle {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.hero__button {
+    padding: 15px 30px;
+    background-color: #f5c518;
+    color: #1f1f1f;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero__button:hover {
+    background-color: #e0b217;
+    transform: scale(1.1);
+}
+
+/* Menu Section */
+.menu {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.menu__title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.menu__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu__item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 250px;
+}
+
+.menu__item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu__item-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.menu__item-description {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.menu__item-price {
+    font-size: 1.2em;
+    color: #f5c518;
+}
+
+/* Reservation Section */
+.reservation {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.reservation__title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.reservation__form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reservation__label {
+    font-size: 1em;
+}
+
+.reservation__input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.reservation__button {
+    padding: 15px;
+    background-color: #f5c518;
+    color: #1f1f1f;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reservation__button:hover {
+    background-color: #e0b217;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.reviews__title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.reviews__list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.review {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review__text {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.review__author {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer__text {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.footer__social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer__link {
+    color: #f5c518;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.footer__link:hover {
+    color: #e0b217;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
